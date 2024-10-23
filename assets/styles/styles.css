@@ -11,7 +11,7 @@ nav {
 header {
   background: linear-gradient(180deg, #111111, #2c2219, #111111 100%);
   padding-top: 50px;
-  padding-bottom: -500px;
+  /* max-height: 715px; */
 }
 
 .navigation-bar {
@@ -148,4 +148,32 @@ a {
   top: -350px;
   right: 50px;
   scale: 0.75;
+}
+
+@media screen and (max-width: 100px) {
+  * {
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navigation-bar {
+    display: none;
+  }
+
+  .navigation-three-lines {
+    display: inline;
+    color: #ffffff;
+  }
+
+  #banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  #banner-title {
+    font-size: 36px;
+  }
+  .banner-text {
+    width: 285px;
+  }
 }

@@ -20,6 +20,7 @@ h1,
 h2,
 h3,
 p,
-td {
+td,
+li {
   color: white;
 }

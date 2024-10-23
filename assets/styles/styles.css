@@ -319,6 +319,41 @@ option {
   border-radius: 18px;
 }
 
+footer {
+  background-color: black;
+}
+.footer-container {
+  /* margin: 0 10%; */
+  padding-top: 66px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #ffffff1a;
+  padding-bottom: 80px;
+}
+
+.footer-container li {
+  color: #ffffff80;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: left;
+  list-style-type: none;
+}
+
+.footer-description {
+  font-size: 14px;
+}
+
+footer h6 {
+  color: #ffffff80;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  text-align: center;
+  border-top: 1px solid #ffffff1a;
+  width: 100%;
+  background-color: #ffffff1a;
+  padding: 20px 0;
+}
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -373,9 +408,14 @@ option {
     width: 318px;
   }
 
-  .calculator {
+  .calculator,
+  .footer-container {
     flex-direction: column;
     gap: 40px;
+  }
+
+  .footer-container {
+    align-items: center;
   }
 
   .team-container {

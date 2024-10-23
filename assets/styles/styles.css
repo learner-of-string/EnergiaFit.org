@@ -59,7 +59,7 @@ a {
 }
 
 .navigation-items {
-  color: #ffffff;
+  /* color: #ffffff; */
   border: none;
   background-color: none;
   font-size: 18px;
@@ -77,7 +77,7 @@ a {
 }
 
 #banner-title {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 78px;
   font-weight: 900;
 }
@@ -113,7 +113,7 @@ a {
 .card-title {
   font-size: 40px;
   font-weight: 900;
-  color: white;
+  /* color: white; */
 }
 
 .card-details {
@@ -166,7 +166,7 @@ main {
 
 .section-thumbnail {
   width: 671px;
-  color: white;
+  /* color: white; */
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -193,7 +193,7 @@ main {
 }
 
 .img-caption {
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 18px;
   font-weight: 600;
   text-align: center;
@@ -208,6 +208,32 @@ main {
   line-height: 18px;
   letter-spacing: 0.3px;
   text-align: center;
+}
+
+#run-an-extra-mile-easily {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  background-color: #222222;
+  padding: 40px 50px 30px 50px;
+  gap: 165px;
+  align-items: center;
+  border-radius: 18px;
+}
+
+#run-an-extra-mile-easily-container {
+  padding-bottom: 100px;
+}
+.btn-join-now {
+  padding: 10px 22px;
+  margin-top: 34px;
+}
+
+#run-an-extra-mile-easily img {
+  width: 366px;
+  height: 312px;
+  border-radius: 18px;
+  object-fit: cover;
 }
 
 /* responsive */
@@ -237,10 +263,20 @@ main {
     width: 140px;
   }
 
-  #change-your-habits .section-details {
+  #change-your-habits .section-details,
+  #run-an-extra-mile-easily {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+  }
+  #run-an-extra-mile-easily img {
+    width: 287px;
+    height: 170px;
+    object-fit: cover;
+  }
+
+  #run-an-extra-mile-easily {
+    width: 287px;
   }
 
   .section-title {

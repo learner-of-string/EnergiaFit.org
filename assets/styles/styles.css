@@ -4,8 +4,10 @@
 
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header {
@@ -236,6 +238,56 @@ main {
   object-fit: cover;
 }
 
+thead tr {
+  color: #ffffff;
+}
+tbody tr {
+  color: #ffffff80;
+}
+
+td,
+tr,
+table {
+  border: 1px solid #ffffff1a;
+  border-collapse: collapse;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+.calculator {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #222222;
+  padding: 50px 10%;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+#bmi-container {
+  padding: 100px 0;
+}
+
+input,
+select {
+  border-radius: 8px;
+  background: #ffffff1a;
+  border: none;
+  outline: 0;
+  padding: 12px 40px 12px 20px;
+  margin: 10px 0;
+}
+
+input::placeholder,
+option {
+  color: #ffffff1a;
+}
+
+#select-an-activity-factor {
+  width: 70%;
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -289,10 +341,9 @@ main {
   .section-thumbnail {
     width: 318px;
   }
-}
 
-@media screen and (max-width: 100px) {
-  * {
-    visibility: hidden;
+  .calculator {
+    flex-direction: column;
+    gap: 40px;
   }
 }

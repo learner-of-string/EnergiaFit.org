@@ -288,6 +288,37 @@ option {
   width: 70%;
 }
 
+.team-container {
+  padding: 20px 0 0 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #ffffff1a;
+  border-radius: 18px;
+  /* align-items: center; */
+}
+
+.gallery {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.team-container img {
+  width: 326.67px;
+  height: 272px;
+  border-radius: 18px;
+}
+
+.member-captions {
+  position: relative;
+  top: -60px;
+  left: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 220px;
+  border-radius: 18px;
+}
+
 /* responsive */
 
 @media screen and (max-width: 576px) {
@@ -345,5 +376,10 @@ option {
   .calculator {
     flex-direction: column;
     gap: 40px;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
